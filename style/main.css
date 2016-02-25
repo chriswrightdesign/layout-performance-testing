@@ -4,8 +4,18 @@
 
 body {
     background: #ddd;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 100%;
     margin: 0;
 }
+ul {
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+}
+
 article,
 aside,
 details,
@@ -22,33 +32,200 @@ summary {
   display: block;
 }
 
+button {
+    background: none;
+    border: none;
+}
+
 .container {}
 
-.heading {}
-.heading--primary {}
+.heading {
+    font-weight: 700;
+}
+
+.heading--primary {
+    font-size: 2em;
+}
 
 .test-list {}
 .test-list__item {}
 
-.test-stage {}
 
 
-.grid {}
-.grid__item {}
 
-.card {}
-.card__image {}
-.card__content {}
-.card__heading {}
-.card__text {}
-.card__button {}
+.card {
+    background: #fff;
+    border-radius: 3px;
+    padding: 1.5em;
+}
 
-.image {}
+.card__image {
+
+}
+
+.image {
+    background: #666;
+    height: 100px;
+    width: 100%;
+}
+
+.card__content {
+
+}
+
+.card__heading {
+    font-size: 1.5em;
+}
+
+.card__text {
+    font-size: 1em;
+}
+
+.card__button {
+    background-color: #333;
+    color: #fff;
+    font-size: 1em;
+    padding: 1em;
+}
 
 
-.test-stage--float {}
-.test-stage--flex {}
-.test-stage--flex-stretch {}
-.test-stage--float-nth {}
-.test-stage--float-calc {}
-.test-stage--flex-container-queries {}
+/**
+ * Test cases
+ * test stage will change and grid/grid items will change
+ */
+
+.test-stage {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/**
+ * 1. Floated grid
+ */
+
+.test-stage--float .grid {
+    margin-left: -1em;
+}
+
+.test-stage--float .grid__item {
+    margin-left: 1em;
+    margin-bottom: 1em;
+    float: left;
+    width: 25%;
+}
+
+/**
+ * 2. Floated grid with nth-selectors
+ */
+
+.test-stage--float-nth .grid {
+
+}
+
+.test-stage--float-nth .grid__item {
+
+}
+
+/**
+ * 3. Floated grid with calc
+ */
+
+.test-stage--float-calc .grid {
+
+}
+
+.test-stage--float-calc .grid__item {
+
+}
+
+/**
+ * 4. Floated grid with viewport
+ */
+
+.test-stage--float-viewport .grid {
+
+}
+
+.test-stage--float-viewport .grid__item {
+
+}
+
+/**
+ * 5. Flexbox, no stretch
+ */
+
+.test-stage--flex .grid {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -1em;
+}
+
+.test-stage--flex .grid__item {
+    margin-left: 1em;
+    margin-bottom: 1em;
+    flex: 0 0 auto;
+    width: 25%;
+}
+
+/**
+ * 6. Stretch
+ */
+
+.test-stage--flex-stretch .grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -1em;
+}
+
+.test-stage--flex-stretch .grid__item {
+    margin-left: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    flex: 0 0 auto;
+    width: 25%;
+}
+
+/**
+ * 7. Container queries
+ */
+
+.test-stage--flex-container-queries .grid {
+
+}
+
+.test-stage--flex-container-queries .grid__item {
+
+}
+
+/**
+ * 8. Flexbox, grow
+ */
+
+.test-stage--flex-grow .grid {
+
+}
+
+.test-stage--flex-grow .grid__item {
+
+}
+
+/**
+ * 9. Flexbox, Reverse wrap
+ */
+
+.test-stage--flex-wrap-reverse .grid {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    margin-left: -1em;
+}
+
+.test-stage--flex-wrap-reverse .grid__item {
+    margin-left: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    flex: 0 0 auto;
+    width: 25%;
+}
+
+
