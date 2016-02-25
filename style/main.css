@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+    background: #ddd;
+    margin: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+.container {}
+
+.heading {}
+.heading--primary {}
+
+.test-list {}
+.test-list__item {}
+
+.test-stage {}
+
+
+.grid {}
+.grid__item {}
+
+.card {}
+.card__image {}
+.card__content {}
+.card__heading {}
+.card__text {}
+.card__button {}
+
+.image {}
+
+
+.test-stage--float {}
+.test-stage--flex {}
+.test-stage--flex-stretch {}
+.test-stage--float-nth {}
+.test-stage--float-calc {}
+.test-stage--flex-container-queries {}
