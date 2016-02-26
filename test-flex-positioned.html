@@ -2,17 +2,30 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    <title>Flex-perf-test: test float nth selector</title>
+    <title>Flex-perf-test: test fle</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style/main.css" />
   </head>
   <body>
     <main class="container">
 
-        <h2 class="heading heading--primary">Test Float</h2>
+        <h2 class="heading heading--primary">Test Flex</h2>
         <p class="explanation">The float test is our litmus test to get a baseline condition</p>
-        <div class="test-stage stage--float">
-          <ul class="grid">
+        <nav class="controls">
+          <ul class="js-controls controls__list">
+            <li class="controls__list-item">
+              <button class="js-trigger-add-item">+ Add Item</button>
+            </li>
+            <li class="controls__list-item">
+              <button class="js-trigger-remove-item">- Remove Item</button>
+            </li>
+            <li class="controls__list-item">
+              <button class="js-trigger-toggle-width">Toggle container width</button>
+            </li>
+          </ul>
+        </nav>
+        <div class="test-stage test-stage--flex-position js-stage">
+          <ul class="grid js-grid">
 
             <li class="grid__item">
               <div class="card">
@@ -1313,7 +1326,1305 @@
                 </div>
               </div>
             </li>
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Compare</h1>
+                  <p class="card__text">Some content, because why not test flexbox vs floats?.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
 
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Float vs Flex</h3>
+                  <p class="card__text">Some content, because why not.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Performance</h3>
+                  <p class="card__text">Some content, because why not.This one has a lot more text because it'll be useful when we're testing align-items stretch</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Compare</h1>
+                  <p class="card__text">Some content, because why not test flexbox vs floats?.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Float vs Flex</h3>
+                  <p class="card__text">Some content, because why not.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Performance</h3>
+                  <p class="card__text">Some content, because why not.This one has a lot more text because it'll be useful when we're testing align-items stretch</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Compare</h1>
+                  <p class="card__text">Some content, because why not test flexbox vs floats?.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Float vs Flex</h3>
+                  <p class="card__text">Some content, because why not.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Performance</h3>
+                  <p class="card__text">Some content, because why not.This one has a lot more text because it'll be useful when we're testing align-items stretch</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Compare</h1>
+                  <p class="card__text">Some content, because why not test flexbox vs floats?.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Float vs Flex</h3>
+                  <p class="card__text">Some content, because why not.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Performance</h3>
+                  <p class="card__text">Some content, because why not.This one has a lot more text because it'll be useful when we're testing align-items stretch</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Compare</h1>
+                  <p class="card__text">Some content, because why not test flexbox vs floats?.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Float vs Flex</h3>
+                  <p class="card__text">Some content, because why not.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Performance</h3>
+                  <p class="card__text">Some content, because why not.This one has a lot more text because it'll be useful when we're testing align-items stretch</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Compare</h1>
+                  <p class="card__text">Some content, because why not test flexbox vs floats?.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Float vs Flex</h3>
+                  <p class="card__text">Some content, because why not.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Performance</h3>
+                  <p class="card__text">Some content, because why not.This one has a lot more text because it'll be useful when we're testing align-items stretch</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Compare</h1>
+                  <p class="card__text">Some content, because why not test flexbox vs floats?.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Float vs Flex</h3>
+                  <p class="card__text">Some content, because why not.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Performance</h3>
+                  <p class="card__text">Some content, because why not.This one has a lot more text because it'll be useful when we're testing align-items stretch</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Compare</h1>
+                  <p class="card__text">Some content, because why not test flexbox vs floats?.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Float vs Flex</h3>
+                  <p class="card__text">Some content, because why not.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Performance</h3>
+                  <p class="card__text">Some content, because why not.This one has a lot more text because it'll be useful when we're testing align-items stretch</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Compare</h1>
+                  <p class="card__text">Some content, because why not test flexbox vs floats?.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Float vs Flex</h3>
+                  <p class="card__text">Some content, because why not.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Performance</h3>
+                  <p class="card__text">Some content, because why not.This one has a lot more text because it'll be useful when we're testing align-items stretch</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Compare</h1>
+                  <p class="card__text">Some content, because why not test flexbox vs floats?.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Float vs Flex</h3>
+                  <p class="card__text">Some content, because why not.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Performance</h3>
+                  <p class="card__text">Some content, because why not.This one has a lot more text because it'll be useful when we're testing align-items stretch</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Compare</h1>
+                  <p class="card__text">Some content, because why not test flexbox vs floats?.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Float vs Flex</h3>
+                  <p class="card__text">Some content, because why not.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Performance</h3>
+                  <p class="card__text">Some content, because why not.This one has a lot more text because it'll be useful when we're testing align-items stretch</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Compare</h1>
+                  <p class="card__text">Some content, because why not test flexbox vs floats?.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Float vs Flex</h3>
+                  <p class="card__text">Some content, because why not.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Performance</h3>
+                  <p class="card__text">Some content, because why not.This one has a lot more text because it'll be useful when we're testing align-items stretch</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Compare</h1>
+                  <p class="card__text">Some content, because why not test flexbox vs floats?.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Float vs Flex</h3>
+                  <p class="card__text">Some content, because why not.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Performance</h3>
+                  <p class="card__text">Some content, because why not.This one has a lot more text because it'll be useful when we're testing align-items stretch</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Compare</h1>
+                  <p class="card__text">Some content, because why not test flexbox vs floats?.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Float vs Flex</h3>
+                  <p class="card__text">Some content, because why not.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Performance</h3>
+                  <p class="card__text">Some content, because why not.This one has a lot more text because it'll be useful when we're testing align-items stretch</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Compare</h1>
+                  <p class="card__text">Some content, because why not test flexbox vs floats?.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Float vs Flex</h3>
+                  <p class="card__text">Some content, because why not.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Performance</h3>
+                  <p class="card__text">Some content, because why not.This one has a lot more text because it'll be useful when we're testing align-items stretch</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Compare</h1>
+                  <p class="card__text">Some content, because why not test flexbox vs floats?.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Float vs Flex</h3>
+                  <p class="card__text">Some content, because why not.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Performance</h3>
+                  <p class="card__text">Some content, because why not.This one has a lot more text because it'll be useful when we're testing align-items stretch</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Compare</h1>
+                  <p class="card__text">Some content, because why not test flexbox vs floats?.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Float vs Flex</h3>
+                  <p class="card__text">Some content, because why not.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Performance</h3>
+                  <p class="card__text">Some content, because why not.This one has a lot more text because it'll be useful when we're testing align-items stretch</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Compare</h1>
+                  <p class="card__text">Some content, because why not test flexbox vs floats?.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Float vs Flex</h3>
+                  <p class="card__text">Some content, because why not.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Performance</h3>
+                  <p class="card__text">Some content, because why not.This one has a lot more text because it'll be useful when we're testing align-items stretch</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Compare</h1>
+                  <p class="card__text">Some content, because why not test flexbox vs floats?.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Float vs Flex</h3>
+                  <p class="card__text">Some content, because why not.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Performance</h3>
+                  <p class="card__text">Some content, because why not.This one has a lot more text because it'll be useful when we're testing align-items stretch</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Compare</h1>
+                  <p class="card__text">Some content, because why not test flexbox vs floats?.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Float vs Flex</h3>
+                  <p class="card__text">Some content, because why not.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Performance</h3>
+                  <p class="card__text">Some content, because why not.This one has a lot more text because it'll be useful when we're testing align-items stretch</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Compare</h1>
+                  <p class="card__text">Some content, because why not test flexbox vs floats?.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Float vs Flex</h3>
+                  <p class="card__text">Some content, because why not.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Performance</h3>
+                  <p class="card__text">Some content, because why not.This one has a lot more text because it'll be useful when we're testing align-items stretch</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Compare</h1>
+                  <p class="card__text">Some content, because why not test flexbox vs floats?.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Float vs Flex</h3>
+                  <p class="card__text">Some content, because why not.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Performance</h3>
+                  <p class="card__text">Some content, because why not.This one has a lot more text because it'll be useful when we're testing align-items stretch</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Compare</h1>
+                  <p class="card__text">Some content, because why not test flexbox vs floats?.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Float vs Flex</h3>
+                  <p class="card__text">Some content, because why not.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Performance</h3>
+                  <p class="card__text">Some content, because why not.This one has a lot more text because it'll be useful when we're testing align-items stretch</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Compare</h1>
+                  <p class="card__text">Some content, because why not test flexbox vs floats?.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Float vs Flex</h3>
+                  <p class="card__text">Some content, because why not.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Performance</h3>
+                  <p class="card__text">Some content, because why not.This one has a lot more text because it'll be useful when we're testing align-items stretch</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Compare</h1>
+                  <p class="card__text">Some content, because why not test flexbox vs floats?.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Float vs Flex</h3>
+                  <p class="card__text">Some content, because why not.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Performance</h3>
+                  <p class="card__text">Some content, because why not.This one has a lot more text because it'll be useful when we're testing align-items stretch</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Compare</h1>
+                  <p class="card__text">Some content, because why not test flexbox vs floats?.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Float vs Flex</h3>
+                  <p class="card__text">Some content, because why not.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Performance</h3>
+                  <p class="card__text">Some content, because why not.This one has a lot more text because it'll be useful when we're testing align-items stretch</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Compare</h1>
+                  <p class="card__text">Some content, because why not test flexbox vs floats?.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Float vs Flex</h3>
+                  <p class="card__text">Some content, because why not.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Performance</h3>
+                  <p class="card__text">Some content, because why not.This one has a lot more text because it'll be useful when we're testing align-items stretch</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Compare</h1>
+                  <p class="card__text">Some content, because why not test flexbox vs floats?.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Float vs Flex</h3>
+                  <p class="card__text">Some content, because why not.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Performance</h3>
+                  <p class="card__text">Some content, because why not.This one has a lot more text because it'll be useful when we're testing align-items stretch</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Compare</h1>
+                  <p class="card__text">Some content, because why not test flexbox vs floats?.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Float vs Flex</h3>
+                  <p class="card__text">Some content, because why not.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Performance</h3>
+                  <p class="card__text">Some content, because why not.This one has a lot more text because it'll be useful when we're testing align-items stretch</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Compare</h1>
+                  <p class="card__text">Some content, because why not test flexbox vs floats?.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Float vs Flex</h3>
+                  <p class="card__text">Some content, because why not.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Performance</h3>
+                  <p class="card__text">Some content, because why not.This one has a lot more text because it'll be useful when we're testing align-items stretch</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Compare</h1>
+                  <p class="card__text">Some content, because why not test flexbox vs floats?.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Float vs Flex</h3>
+                  <p class="card__text">Some content, because why not.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Performance</h3>
+                  <p class="card__text">Some content, because why not.This one has a lot more text because it'll be useful when we're testing align-items stretch</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Compare</h1>
+                  <p class="card__text">Some content, because why not test flexbox vs floats?.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Float vs Flex</h3>
+                  <p class="card__text">Some content, because why not.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Performance</h3>
+                  <p class="card__text">Some content, because why not.This one has a lot more text because it'll be useful when we're testing align-items stretch</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Compare</h1>
+                  <p class="card__text">Some content, because why not test flexbox vs floats?.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Float vs Flex</h3>
+                  <p class="card__text">Some content, because why not.</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Performance</h3>
+                  <p class="card__text">Some content, because why not.This one has a lot more text because it'll be useful when we're testing align-items stretch</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="grid__item">
+              <div class="card">
+                <div class="card__image">
+                  <img src="" class="image" />
+                </div>
+                <div class="card__content">
+                  <h3 class="card__heading">Performance</h3>
+                  <p class="card__text">Some content, because why not.This one has a lot more text because it'll be useful when we're testing align-items stretch</p>
+                  <button class="card__button">Do nothing!</button>
+                </div>
+              </div>
+            </li>
           </ul>
         </div>
     </main>

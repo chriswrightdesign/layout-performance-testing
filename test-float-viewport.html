@@ -11,8 +11,21 @@
 
         <h2 class="heading heading--primary">Test Float</h2>
         <p class="explanation">Viewport width grid items</p>
-        <div class="test-stage test-stage--float-viewport">
-          <ul class="grid">
+        <nav class="controls">
+          <ul class="js-controls controls__list">
+            <li class="controls__list-item">
+              <button class="js-trigger-add-item">+ Add Item</button>
+            </li>
+            <li class="controls__list-item">
+              <button class="js-trigger-remove-item">- Remove Item</button>
+            </li>
+            <li class="controls__list-item">
+              <button class="js-trigger-toggle-width">Toggle container width</button>
+            </li>
+          </ul>
+        </nav>
+        <div class="test-stage test-stage--float-viewport js-stage">
+          <ul class="grid js-grid">
 
             <li class="grid__item">
               <div class="card">

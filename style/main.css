@@ -101,6 +101,10 @@ button {
     max-width: 1000px;
 }
 
+.test-stage.is-reduced {
+    max-width: 800px;
+}
+
 /**
  * 1. Floated grid
  */
@@ -124,12 +128,23 @@ button {
  * 2. Floated grid with nth-selectors
  */
 
-.test-stage--float-nth .grid {
-
+.test-stage--float-nth-selector .grid {
+    margin-left: -1em;
 }
 
-.test-stage--float-nth .grid__item {
+.test-stage--float-nth-selector .grid__item {
+    float: left;
+    margin-bottom: 1em;
+    padding-left: 1em;
+    width: 25%;
+}
 
+.test-stage--float-nth-selector .grid__item:nth-child(n+6){
+    width: 50%;
+}
+
+.test-stage--float-nth-selector .grid__item:nth-child(4n+1){
+    clear: left;
 }
 
 /**
@@ -163,7 +178,7 @@ button {
     float: left;
     margin-bottom: 1em;
     padding-left: 1em;
-    width: 20vw;
+    width: 16vw;
 }
 
 .test-stage--float-viewport .grid__item:nth-child(4n+1){
@@ -211,11 +226,21 @@ button {
  */
 
 .test-stage--flex-container-queries .grid {
-
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -1em;
 }
 
 .test-stage--flex-container-queries .grid__item {
+    display: flex;
+    flex: 0 0 auto;
+    margin-bottom: 1em;
+    padding-left: 1em;
+    width: 25%;
+}
 
+.test-stage--flex-container-queries .grid__item:nth-last-child(2):nth-child(4n) {
+    min-width: 33%;
 }
 
 /**
@@ -255,4 +280,25 @@ button {
     width: 25%;
 }
 
+/**
+ * 10. position
+ */
+
+.test-stage--flex-position .grid {
+    align-content: center;
+    align-items: center;
+    justify-content: flex-end;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    margin-left: -1em;
+}
+
+.test-stage--flex-position .grid__item {
+margin-left: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    flex: 0 0 auto;
+    width: 25%;
+}
+}
 
