@@ -3,7 +3,7 @@
 }
 
 body {
-    background: #ddd;
+    background: #fbfbfb;
     font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
     font-size: 100%;
     margin: 0;
@@ -40,22 +40,34 @@ button {
 .container {}
 
 .heading {
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .heading--primary {
-    font-size: 2em;
+    font-size: 1.1em;
+}
+
+.header {
+    background-color: #fff;
+    border-bottom: 1px solid #e7e7e7;
+    margin-bottom: 40px;
+    text-align: center;
 }
 
 .test-list {}
 .test-list__item {}
 
-
+.controls {
+    position: fixed;
+    left: 0;
+}
 
 
 .card {
     background: #fff;
-    border-radius: 3px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    color: #484e5c;
     padding: 1.5em;
     width: 100%;
 }
