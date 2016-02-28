@@ -64,10 +64,13 @@
             cardHeading = createElem('h3', 'card__heading'),
             cardText = createElem('p', 'card__text'),
             cardButton = createElem('button', 'card__button');
+            var image = new Image();
+            image.className = "image";
 
         cardHeading.textContent = "New Item";
         cardText.textContent = getRandomText();
         cardButton.textContent = "Also nothing";
+        cardImage.appendChild(image);
         cardContent.appendChild(cardHeading);
         cardContent.appendChild(cardText);
         cardContent.appendChild(cardButton);
