@@ -7,44 +7,62 @@
     <link rel="stylesheet" href="style/main.css" />
   </head>
   <body>
+    <header class="banner">
+      <h1 class="main-heading">
+        Layout performance testing
+      </h1>
+    </header>
     <main class="container">
-
-        <h2 class="heading heading--primary">Simple test - baselines</h2>
+      <div class="contain-center">
+        <h2 class="heading heading--primary">Layout tests</h2>
         <ul class="test-list">
           <li class="test-list__item">
-            <a class="test-list__link" href="test-float.html">Test: 100 cards float</a>
+            <div class="card">
+              <a class="test-list__link" href="test-float.html">Float % widths</a>
+            </div>
           </li>
           <li class="test-list__item">
-            <a class="test-list__link" href="test-float-nth-selector.html">Test: 100 cards float, nth selectors</a>
+            <div class="card">
+              <a class="test-list__link" href="test-float-nth-selector.html">Float with nth-selectors</a>
+            </div>
           </li>
           <li class="test-list__item">
-            <a class="test-list__link" href="test-float-calc.html">Test: 100 cards float, calc widths</a>
+          <div class="card">
+            <a class="test-list__link" href="test-float-calc.html">Float with calc widths</a>
+          </div>
           </li>
           <li class="test-list__item">
-            <a class="test-list__link" href="test-float-viewport.html">Test: 100 cards float, viewport widths</a>
+          <div class="card">
+            <a class="test-list__link" href="test-float-viewport.html">Float with viewport unit widths</a>
+            </div>
           </li>
           <li class="test-list__item">
-            <a class="test-list__link" href="test-flex.html">Test: 100 cards flex, no stretch</a>
+          <div class="card">
+            <a class="test-list__link" href="test-flex.html">Flexbox with no stretch or grow</a>
+          </div>
+          </li>
+          <li class="test-list__item">
+          <div class="card">
+            <a class="test-list__link" href="test-flex-stretch.html">Flexbox with stretch</a>
+          </div>
+          </li>
+          <li class="test-list__item">
+          <div class="card">
+            <a class="test-list__link" href="test-flex-grow.html">Flexbox with grow</a>
+            </div>
+          </li>
+          <li class="test-list__item">
+          <div class="card">
+            <a class="test-list__link" href="test-flex-wrap-reverse.html">Flexbox with wrap reverse</a>
+            </div>
+          </li>
+          <li class="test-list__item">
+          <div class="card">
+            <a class="test-list__link" href="test-flex-nth-selectors.html">Flexbox with nth selectors</a>
+            </div>
           </li>
         </ul>
-
-        <h2 class="heading heading--primary">Flex feature</h2>
-        <ul class="test-list">
-          <li class="test-list__item">
-            <a class="test-list__link" href="test-flex-stretch.html">Test: 100 cards flex, stretch</a></li>
-          <li class="test-list__item">
-            <a class="test-list__link" href="test-flex-grow.html">Test: 100 cards flex, grow</a>
-          </li>
-          <li class="test-list__item">
-            <a class="test-list__link" href="test-flex-positioned.html">Test: 100 cards position</a>
-          </li>
-          <li class="test-list__item">
-            <a class="test-list__link" href="test-flex-wrap-reverse.html">Test: 100 cards reverse wrap</a>
-          </li>
-          <li class="test-list__item">
-            <a class="test-list__link" href="test-flex-container-queries.html">Test: 100 cards flex, container queries</a>
-          </li>
-        </ul>
+        </div>
     </main>
   </body>
 </html>

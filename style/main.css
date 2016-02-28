@@ -31,6 +31,10 @@ section,
 summary {
   display: block;
 }
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
 
 button {
     background: none;
@@ -38,6 +42,25 @@ button {
 }
 
 .container {}
+.contain-center {
+    max-width:900px;
+    margin: 0 auto;
+}
+.banner {
+    background-color: #331C3C;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    width: 100%;
+
+}
+
+.main-heading {
+    font-size: 3em;
+    text-align: center;
+}
 
 .heading {
     font-weight: 400;
@@ -57,20 +80,49 @@ button {
     text-align: center;
 }
 
-.test-list {}
-.test-list__item {}
+.test-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -1em;
+}
+.test-list .card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
 
+.test-list__item {
+    flex: 0 0 auto;
+    width: 33.33%;
+    padding-left: 1em;
+}
+.test-list__link {
+    color: rgb(161, 36, 192);
+    text-decoration: none;
+}
 .controls {
     position: fixed;
     left: 1em;
 }
 
 .button {
-    background: aquamarine;
+    background: #331C3C;
+    color: #fff;
     border-radius: 4px;
+    cursor: pointer;
     font-size: 0.85em;
     padding: 1em 1.5em;
     margin-bottom: 1em;
+}
+.button:hover {
+    background: #6D3D80;
+}
+.button:focus {
+    background: #6D3D80;
+    outline: 1px solid #914FAB;
+}
+.button:active {
+    transform: translateY(1px);
 }
 
 
