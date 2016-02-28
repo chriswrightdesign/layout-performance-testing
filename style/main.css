@@ -44,6 +44,9 @@ button {
 }
 
 .heading--primary {
+    line-height: 1.5;
+    padding: 1em;
+    margin: 0;
     font-size: 1.1em;
 }
 
