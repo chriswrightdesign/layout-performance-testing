@@ -96,10 +96,12 @@ button {
     width: 33.33%;
     padding-left: 1em;
 }
+
 .test-list__link {
     color: rgb(161, 36, 192);
     text-decoration: none;
 }
+
 .controls {
     position: fixed;
     left: 1em;
@@ -114,13 +116,16 @@ button {
     padding: 1em 1.5em;
     margin-bottom: 1em;
 }
+
 .button:hover {
     background: #6D3D80;
 }
+
 .button:focus {
     background: #6D3D80;
     outline: 1px solid #914FAB;
 }
+
 .button:active {
     transform: translateY(1px);
 }
@@ -300,13 +305,13 @@ button {
  * 7. Container queries
  */
 
-.test-stage--flex-container-queries .grid {
+.test-stage--flex-nth .grid {
     display: flex;
     flex-wrap: wrap;
     margin-left: -1em;
 }
 
-.test-stage--flex-container-queries .grid__item {
+.test-stage--flex-nth .grid__item {
     display: flex;
     flex: 0 0 auto;
     margin-bottom: 1em;
@@ -314,7 +319,7 @@ button {
     width: 25%;
 }
 
-.test-stage--flex-container-queries .grid__item:nth-last-child(2):nth-child(4n) {
+.test-stage--flex-nth .grid__item:nth-last-child(2):nth-child(4n) {
     min-width: 33%;
 }
 
@@ -369,11 +374,66 @@ button {
 }
 
 .test-stage--flex-position .grid__item {
-margin-left: 1em;
+    margin-left: 1em;
     margin-bottom: 1em;
     display: flex;
     flex: 0 0 auto;
     width: 25%;
 }
+
+/**
+ * 11. Grid
+ */
+
+.test-stage--grid .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    margin-left: -1em;
+}
+.test-stage--grid .grid__item {
+    padding-left: 1em;
+    margin-bottom: 1em;
+    display: flex;
 }
 
+/**
+ * 12. Progressive layout
+ */
+
+.test-stage--progressive-grid .grid {
+    margin-left: -1em;
+}
+
+.test-stage--progressive-grid .grid__item {
+    float: left;
+    padding-left: 1em;
+    margin-bottom: 1em;
+    width: 25%;
+}
+
+.test-stage--progressive-grid .grid__item:nth-child(4n+1){
+    clear: left;
+}
+
+@supports (display: flex) {
+    .test-stage--progressive-grid .grid {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .test-stage--progressive-grid .grid__item {
+         display: flex;
+         flex: 0 0 auto;
+    }
+}
+
+@supports (display: grid) {
+    .test-stage--progressive-grid .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+    }
+
+    .test-stage--progressive-grid .grid__item {
+        width: auto;
+    }
+}
