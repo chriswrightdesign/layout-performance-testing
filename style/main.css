@@ -62,7 +62,15 @@ button {
 
 .controls {
     position: fixed;
-    left: 0;
+    left: 1em;
+}
+
+.button {
+    background: aquamarine;
+    border-radius: 4px;
+    font-size: 0.85em;
+    padding: 1em 1.5em;
+    margin-bottom: 1em;
 }
 
 
