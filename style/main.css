@@ -421,6 +421,21 @@ button {
         flex-wrap: wrap;
     }
 
+    .test-stage--progressive-grid .card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .test-stage--progressive-grid .card__content {
+        display: inherit;
+        flex-direction: inherit;
+        flex: 1 0 auto;
+    }
+
+    .test-stage--progressive-grid .card__button {
+        margin-top: auto;
+    }
+
     .test-stage--progressive-grid .grid__item {
          display: flex;
          flex: 0 0 auto;
