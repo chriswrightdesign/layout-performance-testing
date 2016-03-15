@@ -73,6 +73,12 @@ button {
     font-size: 1.1em;
 }
 
+.heading--secondary {
+    padding: 1em 0;
+    line-height: 1.5;
+    font-size: 1.1em;
+}
+
 .header {
     background-color: #fff;
     border-bottom: 1px solid #e7e7e7;
